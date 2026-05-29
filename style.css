@@ -1,0 +1,133 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fdf3e7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1 {
+    text-align: center;
+    color: #fca136;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 質問エリア */
+.question-box {
+    text-align: center;
+}
+
+.question-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 2px solid #fca136;
+    background: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #fca136;
+    color: white;
+}
+
+/* 結果エリアのグリッド */
+.result-box {
+    text-align: center;
+}
+
+#result-rankings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* カードのデザイン（画像のカードを再現） */
+.rank-item {
+    background: #ffffff;
+    width: calc(33.333% - 14px);
+    min-width: 240px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 順位表示リボン */
+.rank-badge {
+    background: #e67e22;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+/* 画像を表示する型（アスペクト比を保ってトリミング） */
+.rank-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; /* 縦横比を崩さず枠いっぱいに表示 */
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.rank-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.rank-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fca136;
+    margin-bottom: 10px;
+}
+
+.rank-desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+#restart-btn {
+    background: #e67e22;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    max-width: 300px;
+    display: inline-block;
+}
+
+#restart-btn:hover {
+    background: #d35400;
+}
