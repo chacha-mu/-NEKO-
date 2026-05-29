@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたにぴったりの猫種診断</title>
+    <!-- 外部CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🐾 あなたにぴったりの猫種診断 🐾</h1>
+
+    <!-- 質問画面エリア -->
+    <div id="quiz-screen" class="question-box">
+        <div id="question-text" class="question-text">質問がここに表示されます</div>
+        <div id="answer-buttons">
+            <!-- ボタンがJavaScriptで自動生成されます -->
+        </div>
+    </div>
+
+    <!-- 結果画面エリア -->
+    <div id="result-screen" class="result-box hidden">
+        <h2>あなたと相性の良い猫種トップ3</h2>
+        <!-- この中に画像付きのカードが3つ自動生成されます -->
+        <div id="result-rankings"></div>
+        <button id="restart-btn" class="btn">もう一度診断する</button>
+    </div>
+</div>
+
+<!-- 外部JavaScriptファイルの読み込み -->
+<script src="script.js"></script>
+</body>
+</html>
